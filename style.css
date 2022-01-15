@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500;600;700&family=Spline+Sans&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #AAAAAA;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color:#FFFFFF;
+    background: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 24px;
+    margin-top: 16px;
+}
+.fa-arrow-right{
+    margin: 0px 8px;
+    
+}
+/*-------- header section ------*/
+header{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+h4{
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*------ intro section starts ---------- */
+
+.intro-container{
+    display: flex;
+    margin-top: 70px;
+}
+.intro{
+    margin-left: 125px;
+}
+.intro.details{
+    Width:582px;
+    Height :270px;
+}
+.intro.details h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-bottom: 0;
+}
+.intro.details p{
+    font-size: 16px;
+    font-weight: 600;
+    color:#3A3A3A;
+}
+.intro.img{
+    Width : 440px;
+    Height : 414px;
+}
+
+/*-------- intro section ends ---------*/
