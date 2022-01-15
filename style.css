@@ -64,6 +64,23 @@ h4{
 .intro.img{
     Width : 440px;
     Height : 414px;
+    animation: slider 5s infinite;
+}
+/*------ animation ------*/
+@keyframes slider {
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-55px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-55px);
+        opacity: 1;
+    }
+    
 }
 
 /*-------- intro section ends ---------*/
@@ -153,7 +170,7 @@ h4{
 
 /*----------- collection section ends ------------*/
 
-/*-------------- NEWS section Starts ----------*/
+/*-------------- contact section Starts ----------*/
 .contact-container{
     margin-top: 50px;
     padding: 20px;
@@ -163,6 +180,8 @@ h4{
     justify-content: space-evenly;
     margin-top: 50px;
 }
+
+/*---------- contact section ends ------------*/
 
 /*----------- footer section ---------*/
 
