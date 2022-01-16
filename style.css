@@ -4,7 +4,9 @@
 /*--------- inter font family ------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-body{
+html,body{
+    width: 100%;
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     background: #AAAAAA;
     margin: 0;
@@ -46,10 +48,6 @@ h4{
 .intro{
     margin-left: 125px;
 }
-.intro.details{
-    Width:582px;
-    Height :270px;
-}
 .intro.details h1{
     font-size: 52px;
     font-weight: 700;
@@ -62,8 +60,6 @@ h4{
     color:#3A3A3A;
 }
 .intro.img{
-    Width : 440px;
-    Height : 414px;
     animation: slider 5s infinite;
 }
 /*------ animation ------*/
@@ -108,9 +104,7 @@ h4{
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     width: 1047px;
-    height: 1662px;
-   
-   
+    margin-bottom: 1em; 
 }
 .collection{
     display: flex;
@@ -119,7 +113,6 @@ h4{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     padding: 15px;
-    height: 476px;
 }
 .collection h3{
     font-size: 28px;
@@ -209,4 +202,45 @@ footer a{
     color: white;
     display: inline-block;
     margin-right: 5px;
+}
+
+/*----------- media Query -------------*/
+
+/*------------ mobile version ---------*/
+
+@media only screen and (max-width:688px) {
+.intro-container{
+    flex-direction: column;
+    align-items: center;
+}
+.intro.details h1{
+    font-size: 28px;
+}
+@keyframes slider {
+    0%{
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-50px);
+        opacity: 0.75;
+    }
+    100%{
+        transform: translateX(-50px);
+        opacity: 1;
+    }
+    
+}
+.collections{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+}
+.contact-details{
+    flex-direction: column;
+    align-items: center;
+} 
+.contact img{
+    width: 80%;
+}
+
 }
